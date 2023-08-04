@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <title>Resource App</title>
+    </head>
+    <body>
+        
+        <div class="first__section">
+            <div class="top__text__box">
+                <p>Welcome To Your Resource Directory. Create Memories If You Wish</p>
+            </div>
+
+            <div class="create__button__box">
+                <button type="button" id="button">Create A Resource</button>
+            </div>
+        </div>
+
+        <div class="resources__section" id="resources-section">
+            <!-- <div class="resource">
+                <div class="name__of__website">
+                    <a href="#" target='_blank'>Name Of Website</a>
+                    <i class="fa-sharp fa-solid fa-trash"></i>
+                </div>
+
+                <div class="description__of__website">
+                    <p>This website is for searching on UX Design Priciples. I love the way research is done in the website</p>
+                </div>
+            </div> -->
+
+
+        </div>
+
+        <div class="modal__overlay" id="modal-overlay">
+
+            <div class="modal">
+                <div class="close__icon__box">
+                    <i class="fa-sharp fa-solid fa-xmark" id="close-modal-icon"></i>
+                </div>
+
+                <div class="modal__title__box">
+                    <h3>Create Resource</h3>
+                </div>
+
+                <div class="modal__form">
+                    <form id="resource-form">
+
+                        <div class="label__and__input">
+                            <label for="nameOfWebsite">Name Of Website</label>
+                            <input type="text" name="nameOfWebsite" id="nameOfWebsite" placeholder="e.g Data Analysis Website For NASA" >
+                        </div>
+
+                        <div class="label__and__input">
+                            <label for="linkOfWebsite">Link Of Website</label>
+                            <input type="text" name="linkOfWebsite" id="linkOfWebsite" placeholder="e.g https://www.link.com" >
+                        </div>
+
+                        <div class="label__and__input">
+                            <label for="descriptionOfWebsite">Description Of Website</label>
+                            <textarea name="description" id="descriptionOfWebsite" cols="30" rows="10" placeholder="Enter Description"></textarea>
+                        </div>
+
+                        <button type="submit" class="form__button" id="submit-button">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+        <!-- <script src="./second.js"></script> -->
+    </body>
+</html>
